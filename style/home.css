@@ -1,3 +1,7 @@
+@font-face {
+    font-family: poppins;
+    src: url(/font/poppin/Poppins-Regular.ttf);
+}
 *{
     margin: 0px;
 }
@@ -9,21 +13,86 @@
     --White-Linen: #F0ECE5;
 } 
 body {
-    width: 465px;
+    width: 100%;
     height: auto;
     background-color: var(--Light-Primary);
 }
-header{
+header{position: absolute;
+    width: 100%;
+    height: 327px;
     background-color: var(--Steel-Gray);
+    background-blend-mode: normal;
+    box-shadow: 0px 10px 20px #646464;
 }
+  
 #oval {
     position: absolute;
-    left: 122px;
+    left: 600px;
     top: 99px;
-    width: 220px;
-    height: 220px;
+    width: 400px;
+    height: 400px;
     background: #b6bbc4;
     background-blend-mode: normal;
     box-shadow: 0px 2px 4px rgba(100,100,100,0.5);
     border-radius: 100%;
   }  
+#link {
+    position: absolute;
+    right: 1px;
+    top: 3px;
+    width: 370px;
+    height: 40px;
+}
+.links {    
+    margin-top: 3px !important;
+    margin-right: 5px !important;
+    margin-left: 15px !important;
+    font-size: 15px;
+    font-family: poppins;
+    color: var(--White-Linen);
+}
+.fa-regular.fa-house {
+    color: var(--Steel-Gray);
+}
+.title-box {
+    position: absolute;
+    left: 25px;
+    top: 125px;
+    background-color: transparent;
+    height: 130px;
+    width: 220px;
+    padding: 15px;
+}
+.title {
+    color: var(--White-Linen);
+    font-size: 27px;
+    font-family: poppins, monospace;
+    font-weight: 200;
+}
+#mini-oval {
+    position: absolute;
+    left: 77px;
+    top: 29px;
+    width: 15px;
+    height: 15px;
+    background: #b6bbc4;
+    background-blend-mode: normal;
+    border-radius: 100%;
+    margin-left: 83px;
+    margin-top: 39px;
+}
+@keyframes miniOvalAnimation {
+    0% {
+        color: #152c52;
+        transform: translateY(-7px);
+    }
+    100%{
+        transform: translateY(13px);
+        color: var(--Martinique);
+    }
+}
+#mini-oval:hover {
+    animation-name: miniOvalAnimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
