@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+}
+:root {
+    --Light-Primary: #f0ece5;
+    --Steel-Gray: #161A30;
+    --Martinique: #31304D;
+    --French-Gray: #B6BBC4;
+    --White-Linen: #F0ECE5;
+} 
+body {
+    width: 465px;
+    height: auto;
+    background-color: var(--Light-Primary);
+}
+header{
+    background-color: var(--Steel-Gray);
+}
+#oval {
+    position: absolute;
+    left: 122px;
+    top: 99px;
+    width: 220px;
+    height: 220px;
+    background: #b6bbc4;
+    background-blend-mode: normal;
+    box-shadow: 0px 2px 4px rgba(100,100,100,0.5);
+    border-radius: 100%;
+  }  
