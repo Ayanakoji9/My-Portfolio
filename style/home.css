@@ -1,9 +1,10 @@
 @font-face {
     font-family: poppins;
-    src: url(/font/poppin/Poppins-Regular.ttf);
+    src: url(/font/poppins/Poppins-Regular.ttf);
 }
 *{
     margin: 0px;
+    border: 0;
 }
 :root {
     --Light-Primary: #f0ece5;
@@ -19,7 +20,7 @@ body {
 }
 header{position: absolute;
     width: 100%;
-    height: 327px;
+    height: 427px;
     background-color: var(--Steel-Gray);
     background-blend-mode: normal;
     box-shadow: 0px 10px 20px #646464;
@@ -27,8 +28,8 @@ header{position: absolute;
   
 #oval {
     position: absolute;
-    left: 600px;
-    top: 99px;
+    left: 550px;
+    top: 149px;
     width: 400px;
     height: 400px;
     background: #b6bbc4;
@@ -38,16 +39,16 @@ header{position: absolute;
   }  
 #link {
     position: absolute;
-    right: 1px;
+    left: 220vh;
     top: 3px;
-    width: 370px;
+    width: 440px;
     height: 40px;
 }
 .links {    
     margin-top: 3px !important;
-    margin-right: 5px !important;
+    margin-right: 13px !important;
     margin-left: 15px !important;
-    font-size: 15px;
+    font-size: 17px;
     font-family: poppins;
     color: var(--White-Linen);
 }
@@ -69,7 +70,7 @@ header{position: absolute;
     font-family: poppins, monospace;
     font-weight: 200;
 }
-#mini-oval {
+.mini-oval {
     position: absolute;
     left: 77px;
     top: 29px;
@@ -78,21 +79,77 @@ header{position: absolute;
     background: #b6bbc4;
     background-blend-mode: normal;
     border-radius: 100%;
+}
+#mini-oval1 {
     margin-left: 83px;
     margin-top: 39px;
 }
-@keyframes miniOvalAnimation {
+@keyframes moreAnimation {
     0% {
-        color: #152c52;
-        transform: translateY(-7px);
+        background-color: #171630;
+        transform: translateX(8px);
     }
-    100%{
-        transform: translateY(13px);
-        color: var(--Martinique);
+    100% {
+        transform: translateX(-5px);
     }
 }
-#mini-oval:hover {
-    animation-name: miniOvalAnimation;
-    animation-duration: 1s;
+.more {
+    height: 40px;
+    width: 150px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: var(--Martinique);
+    color: var(--Light-Primary);
+}
+.more:hover {
+    animation-name: moreAnimation;
+    animation-duration: 0.5s;
     animation-timing-function: ease-in;
+}
+#more-txt {
+    height: 23px;
+    width: 100px;
+    font-family: poppins;
+    font-size: 15px;
+    color: var(--Light-Primary);
+    left: 0;
+    margin-top: 3px;
+}
+.fa-arrow-up-right {
+    height: 20px;
+    width: 20px;
+    color: var(--White-Linen);
+}
+.content {
+    position: absolute;
+    height: 140px;
+    width: 370px;
+    right: 100px;
+    top: 130px;
+    padding: 5px;
+    margin: 10px;
+}
+#wtfisthatshit {
+    font-family: poppins;
+    font-size: 20px;
+    color: var(--White-Linen);
+    margin: 10px;
+}
+#mini-oval2 {
+    top: 24px;
+    left: 273px;
+}
+.txt-content {
+    margin: 15px;
+    font-family: poppins;
+    font-size: 18px;
+    color: var(--White-Linen);
+    width: 350px;
+}
+.s-link {
+    position: sticky;
+    left: 0;
+    top: 100px;
+    height: 100px;
+    width: 30px;
 }
